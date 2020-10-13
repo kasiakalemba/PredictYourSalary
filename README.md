@@ -96,7 +96,7 @@ This dataset was used to develop our machine learning model for the salary predi
 
 [Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Predict-Your-Salary/blob/master/notebooks/NLP.ipynb)
 
-![](images/webscape.png)
+![](images/webscapes.png)
 
 ### Flask App 
 * **/tools_data/** route focuses on the popularities of different technologies of the data world

@@ -13,6 +13,8 @@ View app here -> [Predict Your Salary](https://predictyoursalaryy.herokuapp.com/
 ## Summary
 An app that predicts salary for data professionals based on experience type and location. It also provides metrics for these jobs titles based on demographics and other factors. 
 
+![](images/frontpage.png)
+
 ### Technologies
 * Python: pandas, numpy, Flask, SKlearn 
 * Javascript: interactions and D3 visualizations 
@@ -54,10 +56,10 @@ This dataset was used to develop our machine learning model for the salary predi
 ### Data Preparation
 #### Cleaning Dataset 1 Kaggle Survey: 
 * The original CSV file was loaded in Jupyter Notebook and consisted of 246 columns and 19718 rows and was narrowed down to 109 columns and 19718 rows. 
-* A clean CSV was exported for the remaining work. 
+* A clean CSV was exported for the remaining work. [Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Predict-Your-Salary/blob/master/notebooks/data_cleaning_kasia.ipynb)
 
 #### Cleaning Dataset 2 Brent Ozar Data: 
-* The original CSV file was loaded in Jupyter Notebook and consisted of 6893 rows and 29 columns and was narrowed down to 6893 rows and 17 columns. 
+* The original CSV file was loaded in Jupyter Notebook and consisted of 6893 rows and 29 columns and was narrowed down to 6893 rows and 17 columns.[Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Predict-Your-Salary/blob/master/notebooks/data_cleaning_sandy.ipynb)
 * A clean CSV was exported for the remaining work. 
 
 ### Visualizations 
@@ -67,8 +69,13 @@ This dataset was used to develop our machine learning model for the salary predi
 * We also compare what we learned in the bootcamp compared to the expectations of the field. 
 * The final dashboard was published in Tableau Public and finally embedded into our html page.
 
+![](images/tableau.png)
+
 #### D3 
 * Word cloud of the recommended first language to learn was built using a d3 version 3 base code and expanded upon to filter out values and repopulate only on changing inputs. Bubble chart of tool and language use in industry was built using d3 version 5 and d3.force was used to build movement animation.
+
+![](images/d3.png)
+
 
 ### Machine Learning 
 * Our Scikit-Learn Model machine learning model involved using a RandomForestClassifier and feature importance to narrow down the features for our model. We selected 10 features for our model, which are, in order: country, primary database, years with this database, region, manage staff, education is computer related, years with this type of job, telecommute days per week, employment sector, and job title. Because most of these features are categorical, and the model needs them to be numerical, pd.get_dummies was then used to convert categories to binary.
@@ -77,12 +84,19 @@ This dataset was used to develop our machine learning model for the salary predi
 
 * The best with the best fit was the Gradient Boosting Regressor, with an r2 value of 0.6.
 
+[Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Predict-Your-Salary/blob/master/notebooks/machine_learning_salary_data1.ipynb)
+![](images/machinelearn.png)
+
 ### Natural Language Processing 
 * To see if we have the skills employers are looking for in the data science profession, we decided to look from the employer vantage point by analyzing the data science jobs available on indeed.com. In this approach, we scraped job descriptions (Beautiful Soup) for all data science jobs available on indeed.com. We processed those job descriptions through a TSNE Visualizer in order to identify evident clusters within the dataset and ran a TF-IDF Vectorizer to see the most common words used in each cluster.
 
 * We processed those job descriptions through a TSNE Visualizer in order to identify evident clusters within the dataset and ran a TF-IDF Vectorizer to see the most common words used in each cluster. All job descriptions were then loaded into a TF-IDF Vectorizer and WordClouds were generated for each cluster.
 
 * For amusement, we will attempt to create a job summary utilizing all the job descriptions from the dataset. We will use ntlk to tokenize the data by applying the CountVectorizer (one-hot encoding) and TF-IDF transformer (adding weights to the encoding). We can than fit the data into a PCA (Principal Component Anlysis) model in an attempt to reduce the dimensionality of the data.
+
+[Jupyter Notebook](https://nbviewer.jupyter.org/github/kasiakalemba/Predict-Your-Salary/blob/master/notebooks/NLP.ipynb)
+
+![](images/webscape.png)
 
 ### Flask App 
 * **/tools_data/** route focuses on the popularities of different technologies of the data world

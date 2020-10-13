@@ -1,5 +1,5 @@
 # Predict Your Salary in the Data Professional World 
-* [Heroku](https://predictyoursalaryy.herokuapp.com/)
+View app here -> [Predict Your Salary](https://predictyoursalaryy.herokuapp.com/)
 
 ## Table of contents
 * [Summary](#summary)

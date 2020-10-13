@@ -33,7 +33,7 @@ An app that predicts salary for data professionals based on experience type and 
 We wanted to create a tool to see how our skills compare to the current industry standard. By using industry data, we creating a machine learning model that predicts how much money one can make based on the selected factors. Looking at the job titles, skills, years of experience, programming languages, databases and many other factors valued in the data professional world, we explored the potential salaries within this field and the expectations of knowing certain skills. We created visuals that further explored the differences of demographics in different job titles looking at data from all over the world. By using our page, you can estimate how much you can expect to earn with the current skills you have as well as compare your expertise to those in the field. For an extended development description, please visit our Development link on the [Heroku webpage](https://predictyoursalaryy.herokuapp.com/development). 
 
 ## Installation 
-### Local: 
+### Local
 * Clone the repository 
 * Create a conda enviornment: 'conda create -name <env_name> python 3.7 --file requirements.txt
 * Run app.py 

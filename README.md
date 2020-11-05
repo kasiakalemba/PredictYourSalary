@@ -63,6 +63,7 @@ This dataset was used to develop our machine learning model for the salary predi
 * A clean CSV was exported for the remaining work. 
 
 ### Visualizations 
+
 #### Tableau 
 * The cleaned CSV file 1 was loaded into Tableau Desktop. 
 * The following visualizations were made based on factors affecting salary: gender, age, location, education level, certificates and computer science background were all analyzed for how they played a role in the salary amount. 
